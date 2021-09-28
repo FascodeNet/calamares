@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Adriaan de Groot <groot@kde.org>, 2020
-# Gustav Gyges, 2020
 # Andreas Eitel <github-aneitel@online.de>, 2020
+# Gustav Gyges, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 12:55+0200\n"
+"POT-Creation-Date: 2021-09-08 13:31+0200\n"
 "PO-Revision-Date: 2017-08-09 10:34+0000\n"
-"Last-Translator: Andreas Eitel <github-aneitel@online.de>, 2020\n"
+"Last-Translator: Gustav Gyges, 2021\n"
 "Language-Team: German (https://www.transifex.com/calamares/teams/20061/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgstr "Hänge Partitionen ein."
 #: src/modules/openrcdmcryptcfg/main.py:72
 #: src/modules/openrcdmcryptcfg/main.py:76 src/modules/fstab/main.py:355
 #: src/modules/fstab/main.py:361 src/modules/fstab/main.py:388
-#: src/modules/localecfg/main.py:135 src/modules/networkcfg/main.py:39
+#: src/modules/localecfg/main.py:135 src/modules/networkcfg/main.py:42
 msgid "Configuration Error"
 msgstr "Konfigurationsfehler"
 
@@ -223,7 +223,7 @@ msgstr "Konfiguriere mkinitcpio. "
 #: src/modules/luksopenswaphookcfg/main.py:91
 #: src/modules/initramfscfg/main.py:90 src/modules/openrcdmcryptcfg/main.py:77
 #: src/modules/fstab/main.py:362 src/modules/localecfg/main.py:136
-#: src/modules/networkcfg/main.py:40
+#: src/modules/networkcfg/main.py:43
 msgid "No root mount point is given for <pre>{!s}</pre> to use."
 msgstr ""
 "Für <pre>{!s}</pre> wurde kein Einhängepunkt für die Root-Partition "
@@ -316,42 +316,50 @@ msgid_plural "Removing %(num)d packages."
 msgstr[0] "Entferne ein Paket"
 msgstr[1] "Entferne %(num)d Pakete."
 
-#: src/modules/packages/main.py:588 src/modules/packages/main.py:600
-#: src/modules/packages/main.py:628
+#: src/modules/packages/main.py:638 src/modules/packages/main.py:650
+#: src/modules/packages/main.py:678
 msgid "Package Manager error"
-msgstr ""
+msgstr "Fehler im Paketmanager"
 
-#: src/modules/packages/main.py:589
+#: src/modules/packages/main.py:639
 msgid ""
 "The package manager could not prepare updates. The command <pre>{!s}</pre> "
 "returned error code {!s}."
 msgstr ""
+"Der Paketmanager konnte die Aktualisierungen nicht vorbereiten. Der Befehl "
+"<pre>{!s}</pre> erzeugte Fehlercode {!s}."
 
-#: src/modules/packages/main.py:601
+#: src/modules/packages/main.py:651
 msgid ""
 "The package manager could not update the system. The command <pre>{!s}</pre>"
 " returned error code {!s}."
 msgstr ""
+"Der Paketmanager konnte das System nicht aktualisieren. Der Befehl "
+"<pre>{!s}</pre> erzeugte Fehlercode {!s}."
 
-#: src/modules/packages/main.py:629
+#: src/modules/packages/main.py:679
 msgid ""
 "The package manager could not make changes to the installed system. The "
 "command <pre>{!s}</pre> returned error code {!s}."
 msgstr ""
+"Der Paketmanager konnte das installierte System nicht verändern. Der Befehl "
+"<pre>{!s}</pre> erzeugte Fehlercode {!s}."
 
 #: src/modules/bootloader/main.py:43
 msgid "Install bootloader."
 msgstr "Installiere Bootloader."
 
-#: src/modules/bootloader/main.py:502
+#: src/modules/bootloader/main.py:508
 msgid "Bootloader installation error"
-msgstr ""
+msgstr "Fehler beim Installieren des Bootloaders"
 
-#: src/modules/bootloader/main.py:503
+#: src/modules/bootloader/main.py:509
 msgid ""
 "The bootloader could not be installed. The installation command "
 "<pre>{!s}</pre> returned error code {!s}."
 msgstr ""
+"Der Bootloader konnte nicht installiert werden. Der Installationsbefehl "
+"<pre>{!s}</pre> erzeugte Fehlercode {!s}."
 
 #: src/modules/hwclock/main.py:26
 msgid "Setting hardware clock."
@@ -392,6 +400,8 @@ msgstr "Schreibe fstab."
 #: src/modules/fstab/main.py:389
 msgid "No <pre>{!s}</pre> configuration is given for <pre>{!s}</pre> to use."
 msgstr ""
+"Keine <pre>{!s}</pre> Konfiguration gegeben die <pre>{!s}</pre> benutzen "
+"könnte."
 
 #: src/modules/dummypython/main.py:35
 msgid "Dummy python job."
@@ -406,6 +416,6 @@ msgstr "Dummy Python-Schritt {}"
 msgid "Configuring locales."
 msgstr "Konfiguriere Lokalisierungen."
 
-#: src/modules/networkcfg/main.py:28
+#: src/modules/networkcfg/main.py:29
 msgid "Saving network configuration."
 msgstr "Speichere Netzwerkkonfiguration."
