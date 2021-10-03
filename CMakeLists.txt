@@ -44,7 +44,7 @@ project( CALAMARES
     VERSION 3.2.44.2
     LANGUAGES C CXX
 )
-
+add_compile_options (-fdiagnostics-color=always)
 set( CALAMARES_VERSION_RC 0 )  # Set to 0 during release cycle, 1 during development
 
 ### OPTIONS
